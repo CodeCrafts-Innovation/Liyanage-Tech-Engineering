@@ -1,0 +1,24 @@
+.hover-link:hover{
+    color: #f59a57;
+    cursor: pointer;
+}
+
+.text-orange{
+       color: #f59a57; 
+}
+
+.btn-custom{
+    background-color: #efeeeb;
+    color:#000;
+    border: none;
+}
+
+.sub-btn-custom{
+    background-color: #f59a57;
+    color:#ffffff;
+    border: none;
+}
+
+.custom-navbar {
+  background-color: #fbfaf7;
+}

@@ -1,71 +1,125 @@
 import React from "react";
-import { Container, Row, Col, Nav, Navbar, Form, InputGroup, Button } from "react-bootstrap";
-import { FaPhoneAlt, FaShoppingCart, FaUser, FaHeart, FaExchangeAlt, FaFacebook, FaInstagram, FaWhatsapp, FaVoicemail, FaMailBulk, FaMailchimp, FaAmilia } from "react-icons/fa";
+
+import {
+  Container,
+  Row,
+  Col,
+  Nav,
+  Navbar,
+  Form,
+  InputGroup,
+  Button,
+} from "react-bootstrap";
+import {
+  FaPhoneAlt,
+  FaShoppingCart,
+  FaUser,
+  FaHeart,
+  FaExchangeAlt,
+  FaFacebook,
+  FaInstagram,
+  FaWhatsapp,
+  FaEnvelope,
+} from "react-icons/fa";
 
 const NavBar = () => {
   return (
     <>
       {/* Top Bar */}
-      <div className="bg-dark border-bottom py-2 small text-muted">
-        <Container fluid className="d-flex justify-content-between align-items-center">
-          <div className="text-white">
-            <span className="ms-3">About Us</span> |{" "}
-            <span className="ms-3">Shop</span> |{" "}
-            <span className="ms-3">Contact</span> |{" "}
-            <span className="ms-3">FAQ</span>
+      <div
+        className="border-bottom py-2 small text-muted gap-3"
+        style={{ backgroundColor: "#f3f3f3" }}
+      >
+        <Container
+          fluid
+          className="d-flex justify-content-between align-items-center "
+        >
+          <div className="px-4">
+            <span className="ms-3 hover-link fw-bold">About Us</span>
+            <span className="ms-3 hover-link fw-bold">Shop</span>
+            <span className="ms-3 hover-link fw-bold">Contact</span>
+            <span className="ms-3 hover-link fw-bold">FAQ</span>
           </div>
 
-          <div className="d-flex align-items-center">
-            <a href="tel:+94765427956" target="_blank" rel="noopener noreferrer" className="text-white me-3"> <FaPhoneAlt size={20} /></a>
-            <a href="tel:+94765427956" target="_blank" rel="noopener noreferrer" className="text-white me-3"> <FaInstagram size={20} /></a>
-            <a href="tel:+94765427956" target="_blank" rel="noopener noreferrer" className="text-white me-3"> <FaFacebook size={20} /></a>
-            <a href="tel:+94765427956" target="_blank" rel="noopener noreferrer" className="text-white me-3"> <FaHeart size={20} /></a>
-            <a href="tel:+94765427956" target="_blank" rel="noopener noreferrer" className="text-white me-3"> <FaWhatsapp size={20} /></a>
+          <div className="d-flex align-items-center px-3 gap-4">
+            <a
+              href="tel:+94765427956"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-black me-3"
+              style={{ textDecoration: "none" }}
+            >
+              <FaPhoneAlt size={18} className="me-3" />
+              <span className="fw-bold">(+94) 76 542 7956</span>
+            </a>
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-black "
+            >
+              <FaInstagram size={18} />
+            </a>
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-black "
+            >
+              <FaFacebook size={18} />
+            </a>
+            <a
+              href="mailto:liyanagetechengineering@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-black"
+            >
+              <FaEnvelope size={18} />
+            </a>
+            <a
+              href="https://wa.me/94765427956"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-black"
+            >
+              <FaWhatsapp size={18} />
+            </a>
           </div>
         </Container>
       </div>
 
-      {/* Main Header
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-5">
-        <a class="navbar-brand" href="#">
-          Liyanage Tech Engineering
-        </a>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li className="nav-item active">
-              <a className="nav-link" href="">
-                Home
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="">
-                About Us
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="">
-                Shop
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="">
-                Contact
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav> */}
+      {/* Main Header */}
+      <Navbar expand="lg" className="custom-navbar shadow-sm py-0 px-4">
+        <Container fluid className="px-4">
+          {/* Logo */}
+          <Navbar.Brand href="#" className="fw-bold fs-4">
+            <img src="src/assets/logo.png" alt="" />
+          </Navbar.Brand>
+
+          {/* Search Bar */}
+          <Form className="mx-auto flex-grow-1" style={{ maxWidth: "600px" }}>
+            <InputGroup>
+              <Form.Control
+                type="text"
+                placeholder="Search for Product"
+                aria-label="Search"
+                className="rounded-pill ps-3"
+              />
+            </InputGroup>
+          </Form>
+
+          {/* Icons */}
+          <div className="d-flex align-items-center gap-4">
+            <Button className="btn-custom rounded-pill px-3 py-3">
+              <FaUser title="Login" className="fs-5 me-2" /> Sign Up / Sign
+              In
+            </Button>
+            <Button className="sub-btn-custom rounded-pill px-3 py-3">
+              <FaShoppingCart title="Shopping Cart" className="fs-5 me-2" />Rs. 0.00
+            </Button>
+          </div>
+        </Container>
+      </Navbar>
     </>
   );
 };
