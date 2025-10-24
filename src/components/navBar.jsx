@@ -27,21 +27,21 @@ const NavBar = () => {
     <>
       {/* Top Bar */}
       <div
-        className="border-bottom py-2 small text-muted gap-3"
+        className="border-bottom py-2 small text-muted gap-4 px-5"
         style={{ backgroundColor: "#f3f3f3" }}
       >
         <Container
           fluid
           className="d-flex justify-content-between align-items-center "
         >
-          <div className="px-4">
+          <div className="px-5">
             <span className="ms-3 hover-link fw-bold">About Us</span>
             <span className="ms-3 hover-link fw-bold">Shop</span>
             <span className="ms-3 hover-link fw-bold">Contact</span>
             <span className="ms-3 hover-link fw-bold">FAQ</span>
           </div>
 
-          <div className="d-flex align-items-center px-3 gap-4">
+          <div className="d-flex align-items-center px-5 gap-4">
             <a
               href="tel:+94765427956"
               target="_blank"
@@ -90,9 +90,9 @@ const NavBar = () => {
 
       {/* Main Header */}
       <Navbar expand="lg" className="custom-navbar shadow-sm py-0 px-4">
-        <Container fluid className="px-4">
+        <Container fluid className="px-5">
           {/* Logo */}
-          <Navbar.Brand href="#" className="fw-bold fs-4">
+          <Navbar.Brand href="#" className="fw-bold fs-4 px-5 ">
             <img src="src/assets/logo.png" alt="" />
           </Navbar.Brand>
 
@@ -104,17 +104,19 @@ const NavBar = () => {
                 placeholder="Search for Product"
                 aria-label="Search"
                 className="rounded-pill ps-3"
+                
               />
+              
             </InputGroup>
           </Form>
 
           {/* Icons */}
-          <div className="d-flex align-items-center gap-4">
-            <Button className="btn-custom rounded-pill px-3 py-3">
+          <div className="d-flex align-items-center gap-4 px-4">
+            {/* <Button className="btn-custom rounded-pill px-3 py-3">
               <FaUser title="Login" className="fs-5 me-2" /> Sign Up / Sign
               In
-            </Button>
-            <Button className="sub-btn-custom rounded-pill px-3 py-3">
+            </Button> */}
+            <Button className="sub-btn-custom rounded-pill px-3 py-2">
               <FaShoppingCart title="Shopping Cart" className="fs-5 me-2" />Rs. 0.00
             </Button>
           </div>
