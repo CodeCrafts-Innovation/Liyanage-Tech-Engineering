@@ -111,15 +111,27 @@ const NavBar = () => {
           {/* Icons */}
           <div className="d-flex align-items-center gap-4">
             <Button className="btn-custom rounded-pill px-3 py-3">
-              <FaUser title="Login" className="fs-5 me-2" /> Sign Up / Sign
-              In
+              <FaUser title="Login" className="fs-5 me-2" /> Sign Up / Sign In
             </Button>
             <Button className="sub-btn-custom rounded-pill px-3 py-3">
-              <FaShoppingCart title="Shopping Cart" className="fs-5 me-2" />Rs. 0.00
+              <FaShoppingCart title="Shopping Cart" className="fs-5 me-2" />
+              Rs. 0.00
             </Button>
           </div>
         </Container>
       </Navbar>
+
+      {/* Category Bar */}
+      <div className="bg-light py-2 border-top border-bottom small">
+        <Container className="d-flex gap-4 flex-wrap ">
+          <span>🪑 Wood mizer Machine</span>          
+          <span>🪑 Cinnoman Cutting Machine</span>
+          <span>🪑 Cinnoman Powder Machine</span>
+          <span>🪑 Bandsaw Machine</span>
+          <span>🪑 Accessories</span>
+
+        </Container>
+      </div>
     </>
   );
 };
