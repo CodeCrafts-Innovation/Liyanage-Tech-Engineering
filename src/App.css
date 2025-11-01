@@ -1,24 +1,29 @@
-.hover-link:hover{
-    color: #f59a57;
-    cursor: pointer;
+body {
+  font-family: "Work Sans", sans-serif;
 }
 
-.text-orange{
-       color: #f59a57; 
+.hover-link:hover {
+  color: #f59a57;
+  cursor: pointer;
 }
 
-.btn-custom{
-    background-color: #efeeeb;
-    color:#000;
-    border: none;
+.text-orange {
+  color: #f59a57;
 }
 
-.sub-btn-custom{
-    background-color: #f59a57;
-    color:#ffffff;
-    border: none;
+.btn-custom {
+  background-color: #efeeeb;
+  color: #000;
+  border: none;
+  font-size: 15px;
+}
+
+.sub-btn-custom {
+  background-color: #f59a57;
+  color: #ffffff;
+  border: none;
 }
 
 .custom-navbar {
-  background-color: #fbfaf7;
+  background-color: #f8f8f8;
 }
