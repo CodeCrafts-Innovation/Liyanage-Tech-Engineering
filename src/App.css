@@ -27,3 +27,176 @@ body {
 .custom-navbar {
   background-color: #f8f8f8;
 }
+
+/* Categories */
+.category-card {
+  transition: transform 0.3s ease;
+}
+
+.category-image {
+  background-color: #f6f6f6;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.category-image img {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+  transition: trasform 0.4s ease;
+}
+
+.category-card:hover .category-image img {
+  transform: scale(1.15);
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Footer */
+.bg-colors {
+  background-color: #000;
+}
+
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: white;
+  margin-right: 10px;
+  margin-top: 15px;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.social-icons a:hover {
+  opacity: 0.8;
+}
+
+.social-icon.facebook {
+  background-color: #3b5998;
+}
+
+.social-icon.twitter {
+  background-color: #000000;
+}
+
+.social-icon.instagram {
+  background: linear-gradient(
+    45deg,
+    #f09433,
+    #e6683c,
+    #dc2743,
+    #cc2366,
+    #bc1888
+  );
+}
+
+.social-icon.youtube {
+  background-color: #ff0000;
+}
+
+.social-icon.whatsapp {
+  background-color: rgb(39, 206, 39);
+}
+
+.social-icon.phone {
+  background-color: rgb(37, 199, 105);
+}
+
+.social-icon.location {
+  background-color: rgb(41, 114, 224);
+}
+
+.payment-icons svg {
+  color: #a0a0a0;
+}
+
+.footer-link-primary {
+  color: #808080 !important;
+  transition: color 0.3s ease;
+}
+
+.footer-p {
+  color: #808080;
+}
+
+.footer-link-primary:hover {
+  color: #f59a57 !important;
+}
+
+.footer-logo {
+  width: 220px;
+  height: 80px;
+}
+
+/* Featured Products */
+.product-card {
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.image-wrapper {
+  position: relative;
+}
+
+.product-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+}
+.price-text {
+  font-weight: bold;
+  color: #f59a57;
+}
+
+.discount-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #f59a57;
+  color: white;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 5px;
+}
+
+.tag-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #28a745;
+  color: white;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 5px;
+}
+
+.card-button {
+  background-color: #f59a57;
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+  width: 75%;
+  border-radius: 5px;
+}
+
+.card-button:hover {
+  background-color: #000000;
+}

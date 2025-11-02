@@ -4,6 +4,9 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import NavBar from "./components/navBar";
 import HeroSlider from "./components/hero_slider";
+import PopularCategories from "./components/Popular_categories";
+import Product from "./components/product";
+import Footer from "./components/footer";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -12,7 +15,10 @@ function App() {
     <>
       <div>
         <NavBar />
-       < HeroSlider/>
+        <HeroSlider />
+        <PopularCategories />
+        <Product/>
+        <Footer/>
       </div>
     </>
   );

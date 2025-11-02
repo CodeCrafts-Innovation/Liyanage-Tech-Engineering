@@ -66,7 +66,7 @@ const HeroSlider = () => {
             className="d-block w-100"
             alt={`slide-${index}`}
             style={{
-              height: "70vh", // full viewport height
+              height: "70vh",
               objectFit: "cover",
             }}
           />

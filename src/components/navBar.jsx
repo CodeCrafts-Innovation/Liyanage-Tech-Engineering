@@ -2,9 +2,6 @@ import React from "react";
 
 import {
   Container,
-  Row,
-  Col,
-  Nav,
   Navbar,
   Form,
   InputGroup,
@@ -14,8 +11,6 @@ import {
   FaPhoneAlt,
   FaShoppingCart,
   FaUser,
-  FaHeart,
-  FaExchangeAlt,
   FaFacebook,
   FaInstagram,
   FaWhatsapp,
