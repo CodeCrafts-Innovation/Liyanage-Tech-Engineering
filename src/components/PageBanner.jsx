@@ -9,6 +9,8 @@ const PageBanner = () => {
       <div className="container">
         <div className="content">
           <h1 className="fw-bold display-4"></h1>
+          <p className="mt-3"></p>
+          <span className="text-light opacity-75">Home</span>
         </div>
       </div>
     </section>
