@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import {categories} from "../data/category_data"; 
 const PopularCategories = () => {
   return (
-    <section className="py-5 ">
+    <section className="py-5 category-section">
       <Container>
         <h2 className="fw-bold mb-5">Popular Categories</h2>
         <Row className="g-4 align-items-center text-center">

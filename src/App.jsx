@@ -7,6 +7,7 @@ import HeroSlider from "./components/hero_slider";
 import PopularCategories from "./components/Popular_categories";
 import Product from "./components/product";
 import Footer from "./components/footer";
+import Testimonial from "./components/testimonial";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -17,8 +18,9 @@ function App() {
         <NavBar />
         <HeroSlider />
         <PopularCategories />
-        <Product/>
-        <Footer/>
+        <Product />
+        <Testimonial />
+        <Footer />
       </div>
     </>
   );

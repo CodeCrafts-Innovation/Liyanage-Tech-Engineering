@@ -3,7 +3,7 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 import { products } from "../data/product";
 const Product = () => {
   return (
-    <section className="py-5">
+    <section className="py-5 product-section">
       <Container>
         <h2 className="fw-bold mb-4">Featured Products</h2>
         <Row className="g-4 align-items-center">
