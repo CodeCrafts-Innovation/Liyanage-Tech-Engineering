@@ -28,6 +28,43 @@ body {
   background-color: #f8f8f8;
 }
 
+/* Page Banner */
+
+.page-banner {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 60vh;
+  position: relative;
+  color: #fff;
+}
+
+.page-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.page-banner .container{
+  position: relative;
+  z-index: 2;
+}
+
+.page-banner .content{
+  max-width: 600px;
+}
+
+@media (max-width: 768px){
+  .page-banner{
+    height: 40vh;
+  }
+}
+
+ .page-banner h1 {
+  font-size: 2rem;
+ }
+
 /* Categories */
 .category-section {
   background-color: #f8f9fa;
@@ -145,8 +182,8 @@ body {
 }
 
 /* Featured Products */
-.product-section{
- /* background-color: #f8f9fa; */
+.product-section {
+  /* background-color: #f8f9fa; */
 }
 .product-card {
   position: relative;
@@ -293,4 +330,96 @@ body {
   .swiper-button-next-custom {
     right: 0;
   }
+}
+
+/* Team Member */
+.team-section {
+  background-color: #fafafa;
+  
+}
+.team-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;   
+  transition: transform 0.3s ease;
+}
+.team-img:hover {
+  transform: scale(1.1);
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  color: white;
+  transition: all 0.3s ease-in-out;
+  font-size: 18px;
+}
+
+.social-icon.facebook {
+  background-color: #3b5998;
+}
+
+.social-icon.twitter {
+  background-color: #000;
+}
+
+.social-icon.linkedin {
+  background-color: #0077b5;
+}
+
+.social-icon.instagram {
+  background-color: #c13584;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+
+/* Statistics Section  */
+.statistics-section {
+    background-size: cover;
+    background-position: center;
+    color: white;
+    min-height: 550px;
+    display: flex;
+    align-items: center;
+    position: relative; 
+}
+
+.statistics-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 1; 
+}
+
+.statistics-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+
+.stat-block {
+    padding: 2rem 1.5rem;
+    height: 100%;
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.stat-block.stat-block-right-edge {
+    border-right: none;
+}
+
+.stat-block.stat-block-bottom-row {
+    border-bottom: none;
 }

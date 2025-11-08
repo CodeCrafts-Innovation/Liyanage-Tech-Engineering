@@ -1,12 +1,6 @@
 import React from "react";
 
-import {
-  Container,
-  Navbar,
-  Form,
-  InputGroup,
-  Button,
-} from "react-bootstrap";
+import { Container, Navbar, Form, InputGroup, Button } from "react-bootstrap";
 import {
   FaPhoneAlt,
   FaShoppingCart,
@@ -16,6 +10,7 @@ import {
   FaWhatsapp,
   FaEnvelope,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
@@ -30,10 +25,36 @@ const NavBar = () => {
           className="d-flex justify-content-between align-items-center "
         >
           <div className="px-5">
-            <span className="ms-3 hover-link fw-bold">About Us</span>
-            <span className="ms-3 hover-link fw-bold">Shop</span>
-            <span className="ms-3 hover-link fw-bold">Contact</span>
-            <span className="ms-3 hover-link fw-bold">FAQ</span>
+            <Link
+              to="/"
+              className="ms-3 text-dark fw-bold text-decoration-none hover-link"
+            >
+              Home
+            </Link>
+            <Link
+              to="/about"
+              className="ms-3 text-dark fw-bold text-decoration-none hover-link"
+            >
+              About Us
+            </Link>
+            <Link
+              to="/shop"
+              className="ms-3 text-dark fw-bold text-decoration-none hover-link"
+            >
+              Shop
+            </Link>
+            <Link
+              to="/contact"
+              className="ms-3 text-dark fw-bold text-decoration-none hover-link"
+            >
+              Contact
+            </Link>
+            <Link
+              to="/faq"
+              className="ms-3 text-dark fw-bold text-decoration-none hover-link"
+            >
+              FAQ
+            </Link>
           </div>
 
           <div className="d-flex align-items-center px-5 gap-4">
@@ -99,20 +120,18 @@ const NavBar = () => {
                 placeholder="Search for Product"
                 aria-label="Search"
                 className="rounded-pill ps-3"
-                
               />
-              
             </InputGroup>
           </Form>
 
           {/* Icons */}
           <div className="d-flex align-items-center gap-4">
             <Button className="btn-custom rounded-pill px-3 py-2">
-              <FaUser title="Login" className="fs-5 me-2" /> Sign Up / Sign
-              In
+              <FaUser title="Login" className="fs-5 me-2" /> Sign Up / Sign In
             </Button>
             <Button className="sub-btn-custom rounded-pill px-3 py-2">
-              <FaShoppingCart title="Shopping Cart" className="fs-5 me-2" />Rs. 0.00
+              <FaShoppingCart title="Shopping Cart" className="fs-5 me-2" />
+              Rs. 0.00
             </Button>
           </div>
         </Container>
@@ -121,12 +140,11 @@ const NavBar = () => {
       {/* Category Bar */}
       <div className=" py-2 border-top border-bottom small">
         <Container className="d-flex gap-4 flex-wrap ">
-          <span>🪑 Wood mizer Machine</span>          
+          <span>🪑 Wood mizer Machine</span>
           <span>🪑 Cinnoman Cutting Machine</span>
           <span>🪑 Cinnoman Powder Machine</span>
           <span>🪑 Bandsaw Machine</span>
           <span>🪑 Accessories</span>
-
         </Container>
       </div>
     </>
