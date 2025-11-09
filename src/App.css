@@ -46,24 +46,24 @@ body {
   background: rgba(0, 0, 0, 0.4);
 }
 
-.page-banner .container{
+.page-banner .container {
   position: relative;
   z-index: 2;
 }
 
-.page-banner .content{
+.page-banner .content {
   max-width: 600px;
 }
 
-@media (max-width: 768px){
-  .page-banner{
+@media (max-width: 768px) {
+  .page-banner {
     height: 40vh;
   }
 }
 
- .page-banner h1 {
+.page-banner h1 {
   font-size: 2rem;
- }
+}
 
 /* Categories */
 .category-section {
@@ -289,7 +289,7 @@ body {
   z-index: 10;
   width: 45px;
   height: 45px;
-  border: 2px solid #ffb703;
+  border: 2px solid #ff7d03;
   border-radius: 50%;
   background-color: #fff;
   color: #333;
@@ -335,13 +335,12 @@ body {
 /* Team Member */
 .team-section {
   background-color: #fafafa;
-  
 }
 .team-img {
   width: 200px;
   height: 200px;
   object-fit: cover;
-  border-radius: 50%;   
+  border-radius: 50%;
   transition: transform 0.3s ease;
 }
 .team-img:hover {
@@ -383,43 +382,105 @@ body {
 
 /* Statistics Section  */
 .statistics-section {
-    background-size: cover;
-    background-position: center;
-    color: white;
-    min-height: 550px;
-    display: flex;
-    align-items: center;
-    position: relative; 
+  background-size: cover;
+  background-position: center;
+  color: white;
+  min-height: 550px;
+  display: flex;
+  align-items: center;
+  position: relative;
 }
 
 .statistics-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5); 
-    z-index: 1; 
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
 
 .statistics-section .container {
-    position: relative;
-    z-index: 2;
+  position: relative;
+  z-index: 2;
 }
 
-
 .stat-block {
-    padding: 2rem 1.5rem;
-    height: 100%;
-    border-right: 1px solid rgba(255, 255, 255, 0.3);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 2rem 1.5rem;
+  height: 100%;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .stat-block.stat-block-right-edge {
-    border-right: none;
+  border-right: none;
 }
 
 .stat-block.stat-block-bottom-row {
-    border-bottom: none;
+  border-bottom: none;
+}
+
+/* Map */
+.map-overlay-container {
+  position: relative;
+  width: 100%;
+}
+
+.map-overlay-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  pointer-events: none;
+}
+.loading-map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+
+/* Contact */
+.main-title{
+  font-size: 1.2rem;
+}
+
+.btn-custom{
+  background-color:#ff7d03;
+  border-color:#ff7d03 ;
+}
+
+.icon-custom{
+  color: #ff7d03;
+}
+
+.detail-text{
+  font-size: 0.9rem;
+}
+
+.contact-content{
+  font-size: 0.95rem;
+}
+
+/* Shop */
+.price-bar{
+  height: 5px;
+  border-radius: 3px;
+}
+
+.price-bar-active{
+  width: 40%;
+  height: 100%;
+  background-color: #8ac44a;
+}
+
+.filter-cursor{
+  cursor: pointer;
 }

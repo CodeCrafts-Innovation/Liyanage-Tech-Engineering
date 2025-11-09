@@ -4,8 +4,8 @@ import NavBar from "./components/navBar";
 import Footer from "./components/footer";
 import IndexPage from "./components/page/index";
 import AboutPage from "./components/page/About_us";
-import ShopPage from "./components/page/Shop";
-import ContactPage from "./components/page/Contact_us";
+import ShopPage from "./components/page/ShopPage";
+import Contact from "./components/page/contact/ContactMain";
 import FaqPage from "./components/page/faq";
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
         <Route path="/" element={<IndexPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/shop" element={<ShopPage />} />
-        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="/faq" element={<FaqPage />} />
       </Routes>
       <Footer />
