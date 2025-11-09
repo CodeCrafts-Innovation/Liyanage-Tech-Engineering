@@ -91,8 +91,8 @@ const ProductCard = ({ product }) => (
     <div className="card border-0 text-center">
       {/* Image Placeholder */}
       <div
-        className="bg-light d-flex justify-content-center align-items-center"
-        style={{ height: "300px" }}
+        className="bg-light d-flex justify-content-center align-items-center image-custom"
+        
       >
         <span className="text-muted"></span>
       </div>

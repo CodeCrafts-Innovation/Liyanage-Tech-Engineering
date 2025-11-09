@@ -484,3 +484,7 @@ body {
 .filter-cursor{
   cursor: pointer;
 }
+
+.image-custom{
+height: 300px;
+}
