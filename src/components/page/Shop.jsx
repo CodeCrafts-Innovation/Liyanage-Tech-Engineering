@@ -184,8 +184,7 @@ const ShopPage = () => {
         </div>
       </div>
 
-      {/* Main Content: Sidebar and Products Grid */}
-      <div className="row">
+         <div className="row">
         {/* LEFT COLUMN: FILTER SIDEBAR (3/12 width on large screens) */}
         <div className="col-12 col-lg-3">
           <FilterSidebar onCategoryChange={handleCategoryChange} />
@@ -201,7 +200,7 @@ const ShopPage = () => {
               <ProductCard key={product.id} product={product} />
             ))}
           </div>
-        </div>
+        </div>          
       </div>
     </div>
   );
