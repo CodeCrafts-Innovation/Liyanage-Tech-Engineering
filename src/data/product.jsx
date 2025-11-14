@@ -7,7 +7,7 @@ export const products = [
     stock: true,
     discount: "-15%",
     tag: "NEW",
-    images: ["dist/assets/download (1).jpg", "dist/assets/download.jpg"],
+    images: ["src/assets/download (1).jpg", "src/assets/download.jpg"],
   },
   {
     name: "Rectangular Sink",
