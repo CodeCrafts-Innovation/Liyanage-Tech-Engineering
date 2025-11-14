@@ -7,7 +7,7 @@ export const products = [
     stock: true,
     discount: "-15%",
     tag: "NEW",
-    images: ["src/assets/download (1).jpg", "src/assets/download.jpg"],
+    images: ["/assets/download (1).jpg", "/assets/download.jpg"],
   },
   {
     name: "Rectangular Sink",
@@ -17,7 +17,7 @@ export const products = [
     stock: true,
     discount: "-15%",
     tag: "NEW",
-    images: ["src/assets/download (1).jpg", "src/assets/download.jpg"],
+    images: ["/assets/download (1).jpg", "/assets/download.jpg"],
   },
   {
     name: "Rectangular Sink",
@@ -27,7 +27,7 @@ export const products = [
     stock: false,
     discount: "-15%",
     tag: "NEW",
-    images: ["src/assets/download (1).jpg", "src/assets/download.jpg"],
+    images: ["/assets/download (1).jpg", "/assets/download.jpg"],
   },
   {
     name: "Rectangular Sink",
@@ -37,7 +37,7 @@ export const products = [
     stock: true,
     discount: "-15%",
     tag: "NEW",
-    images: ["src/assets/download (1).jpg", "src/assets/download.jpg"],
+    images: ["/assets/download (1).jpg", "/assets/download.jpg"],
   },{
     name: "Rectangular Sink",
     price: "$199.00",
@@ -46,7 +46,7 @@ export const products = [
     stock: false,
     discount: "-15%",
     tag: "NEW",
-    images: ["src/assets/download (1).jpg", "src/assets/download.jpg"],
+    images: ["/assets/download (1).jpg", "/assets/download.jpg"],
   },
   {
     name: "Rectangular Sink",
@@ -56,7 +56,7 @@ export const products = [
     stock: true,
     discount: "-15%",
     tag: "NEW",
-    images: ["src/assets/download (1).jpg", "src/assets/download.jpg"],
+    images: ["/assets/download (1).jpg", "/assets/download.jpg"],
   },{
     name: "Rectangular Sink",
     price: "$199.00",
@@ -65,7 +65,7 @@ export const products = [
     stock: false,
     discount: "-15%",
     tag: "NEW",
-    images: ["src/assets/download (1).jpg", "src/assets/download.jpg"],
+    images: ["/assets/download (1).jpg", "/assets/download.jpg"],
   },
   {
     name: "Rectangular Sink",
@@ -75,6 +75,6 @@ export const products = [
     stock: true,
     discount: "-15%",
     tag: "NEW",
-    images: ["src/assets/download (1).jpg", "src/assets/download.jpg"],
+    images: ["/assets/download (1).jpg", "/assets/download.jpg"],
   },
 ];

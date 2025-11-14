@@ -10,7 +10,7 @@ const AboutUsDetails = () => {
           <div className="col-12 col-lg-6 d-flex align-items-stretch">
             <div className="w-100 h-10 overflow-hidden">
               <img
-                src="src/assets/about1.jpg"
+                src="/assets/about1.jpg"
                 alt=""
                 className="img-fluid w-100 h-100 object-fit-cover"
                 style={{ minHeight: "350px" }}

@@ -31,7 +31,7 @@ const Footer = () => {
     <footer className="bg-colors text-white py-5">
       <Container>
         <Row>
-          <img src="src/assets/logo.png" alt="" className="footer-logo" />
+          <img src="/assets/logo.png" alt="" className="footer-logo" />
           {/* Column 1: About us & Contact Details*/}
           <Row>
             <Col md={3}>
@@ -220,7 +220,7 @@ const Footer = () => {
               </p>
             </Col>
             <Col md={6} className="text-md-end payment-icons">
-              <img src="src/assets/payments.png" alt="" />
+              <img src="/assets/payments.png" alt="" />
             </Col>
           </Row>
         </Row>
