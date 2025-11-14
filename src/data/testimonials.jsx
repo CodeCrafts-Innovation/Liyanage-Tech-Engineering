@@ -4,15 +4,14 @@ export const testimonials  = [
     profession: "Profession",
     image: "/assets/1.jpg",
     review:
-      "Lorem Ipsum is simply dummy text of the printing industry. Ipsum has been the industry's standard dummy text ever since the 1500s.",
+      "Lorem Ipsum is simply dummy text of the printing industry.",
     rating: 5,
   },
   {
     name: "John Doe",
     profession: "Designer",
     image: "/assets/1.jpg",
-    review:
-      "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. It has survived not only five centuries.",
+    review: "Lorem Ipsum has been the industry's standard dummy text.",
     rating: 5,
   },
   {
@@ -20,7 +19,7 @@ export const testimonials  = [
     profession: "Architect",
     image: "/assets/1.jpg",
     review:
-      "Lorem Ipsum is simply dummy text of the printing industry. Ipsum has been standard dummy text for many years.",
+      "Lorem Ipsum is simply dummy text of the printing industry.",
     rating: 4,
   },
 ];
