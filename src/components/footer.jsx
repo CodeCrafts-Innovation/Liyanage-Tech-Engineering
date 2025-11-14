@@ -17,8 +17,8 @@ import {
   FaPhoneFlip,
   FaXTwitter,
 } from "react-icons/fa6";
-import googlePlayBadge from "../assets/playstore.png";
-import appStoreBadge from "../assets/app_store.png";
+import googlePlayBadge from "/assets/playstore.png";
+import appStoreBadge from "/assets/app_store.png";
 import {
   FaCcVisa,
   FaCcMastercard,
