@@ -18,7 +18,7 @@ const NavBar = () => {
       {/* Top Bar */}
       <div
         className="border-bottom py-2 small text-muted gap-4 px-5"
-        style={{ backgroundColor: "#E0E0E0" }}
+        style={{ backgroundColor: "#000" }}
       >
         <Container
           fluid
@@ -27,34 +27,29 @@ const NavBar = () => {
           <div className="px-5">
             <Link
               to="/"
-              className="ms-3 text-dark fw-bold text-decoration-none hover-link"
+              className="ms-3 text-white fw-bold text-decoration-none hover-link"
             >
               Home
             </Link>
             <Link
               to="/about"
-              className="ms-3 text-dark fw-bold text-decoration-none hover-link"
+              className="ms-3 text-white fw-bold text-decoration-none hover-link"
             >
               About Us
             </Link>
             <Link
               to="/shop"
-              className="ms-3 text-dark fw-bold text-decoration-none hover-link"
+              className="ms-3 text-white fw-bold text-decoration-none hover-link"
             >
               Shop
             </Link>
             <Link
               to="/contact"
-              className="ms-3 text-dark fw-bold text-decoration-none hover-link"
+              className="ms-3 text-white fw-bold text-decoration-none hover-link"
             >
               Contact
             </Link>
-            <Link
-              to="/faq"
-              className="ms-3 text-dark fw-bold text-decoration-none hover-link"
-            >
-              FAQ
-            </Link>
+         
           </div>
 
           <div className="d-flex align-items-center px-5 gap-4">
